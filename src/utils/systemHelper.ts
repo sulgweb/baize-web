@@ -17,19 +17,19 @@ export function getOs() {
 
 export const osData = {
   windows: {
-    icon: "#icon-windows",
+    icon: "win",
     downType: "exe",
   },
   mac: {
-    icon: "#icon-mac",
+    icon: "mac",
     downType: "dmg",
   },
   linux: {
-    icon: "#icon-linux",
+    icon: "linux",
     downType: "deb",
   },
   unknown: {
-    icon: "#icon-file-unknown",
+    icon: "unknown",
     downType: null,
   },
 };

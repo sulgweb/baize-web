@@ -14,6 +14,12 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
+    id: "baizeToolbox",
+    title: "白泽工具箱",
+    path: "/baize-toolbox",
+    newTab: false,
+  },
+  {
     id: "about",
     title: "关于",
     path: "/about",

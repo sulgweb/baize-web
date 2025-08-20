@@ -1,7 +1,7 @@
 import Introduce from "@/components/Common/Introduce";
 import SelectImage from "@/components/ImageCompress/SelectImage";
 
-const AboutPage = () => {
+const ImageCompress = () => {
   const introduceList = [
     {
       title: "免费",
@@ -21,4 +21,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ImageCompress;
