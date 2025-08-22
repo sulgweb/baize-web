@@ -40,9 +40,16 @@ const Introduce = (props: IIntroducProps) => {
                   <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
                     {item.title}
                   </h3>
-                  <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
-                    {item.description}
-                  </p>
+                  {typeof item.description === "string" ||
+                  typeof item.description === "number" ? (
+                    <p className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                      {item.description}
+                    </p>
+                  ) : (
+                    <div className="text-body-color text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed">
+                      {item.description}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

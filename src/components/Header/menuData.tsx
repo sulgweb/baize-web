@@ -3,7 +3,7 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: "home",
-    title: "Home",
+    title: "主页",
     path: "/",
     newTab: false,
   },
@@ -37,9 +37,9 @@ const menuData: Menu[] = [
     newTab: false,
     submenu: [
       {
-        id: 41,
-        title: "About Page",
-        path: "/about",
+        id: "",
+        title: "VUE & REACT & 微前端",
+        path: "/quick-study",
         newTab: false,
       },
 

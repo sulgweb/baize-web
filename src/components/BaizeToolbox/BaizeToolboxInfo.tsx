@@ -43,7 +43,8 @@ export default async function BaizeToolboxInfo() {
           <div className="mt-16 flex items-center justify-center gap-x-6">
             <Download repoReleases={repoReleases} />
             <a
-              href="/version"
+              href="https://github.com/baizeteam/baize-toolbox/releases"
+              target="_blank"
               className="text-sm leading-6 font-semibold text-gray-400 hover:text-gray-600"
             >
               查看更多版本 <span aria-hidden="true">→</span>
