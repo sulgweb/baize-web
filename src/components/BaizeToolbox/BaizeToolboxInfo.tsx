@@ -22,8 +22,6 @@ export default async function BaizeToolboxInfo() {
 
   const { repoInfo, repoReleases, contributors } = await init();
 
-  console.log(repoInfo, repoReleases, contributors);
-
   return (
     <div className="container">
       <PageInfo
