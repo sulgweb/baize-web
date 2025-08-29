@@ -4,7 +4,7 @@ export default function PageInfo({
   title,
   description,
 }: {
-  title: React.ReactNode;
+  title: any;
   description: React.ReactNode;
 }) {
   return (

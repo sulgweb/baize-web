@@ -1,9 +1,17 @@
 import React from "react";
 import { repoUrl, baseParams } from "@/utils/githubHelper";
-import { projectInfo } from "@/utils/textHelper";
 import PageInfo from "../Common/PageInfo";
 import Download from "./download";
+import { gitHubUrl } from "@/utils/textHelper";
+import { Metadata } from "next";
 
+export const metaData: Metadata = {
+  title: "白泽工具箱",
+  description:
+    "白泽工具箱是一款功能强大的多媒体工具，为用户提供了多种多样的多媒体处理功能。无论您是需要对音视频转码、提取音频/视频/字幕、文字转语音(TTS)、屏幕录制、截图，还是对音视频图片进行压缩，这个工具都能轻松实现。",
+  keywords:
+    "白泽工具箱, 多媒体处理工具, 音视频转码软件, 视频剪辑, 文字转语音, 屏幕录制软件, 截图工具, 音视频图片压缩",
+};
 export const dynamic = "force-dynamic";
 
 export default async function BaizeToolboxInfo() {
@@ -24,17 +32,14 @@ export default async function BaizeToolboxInfo() {
 
   return (
     <div className="container">
-      <PageInfo
-        title={projectInfo?.title}
-        description={projectInfo?.description}
-      />
+      <PageInfo title={metaData?.title} description={metaData?.description} />
 
       {/* <AppGithubStatus repoInfo={repoInfo} contributors={contributors} /> */}
 
       <div className="mt-16 flex items-center justify-center gap-x-6">
         <Download repoReleases={repoReleases} />
         <a
-          href="https://github.com/baizeteam/baize-toolbox/releases"
+          href={`${gitHubUrl}/baize-toolbox/releases`}
           target="_blank"
           className="text-sm leading-6 font-semibold text-gray-400 hover:text-gray-600"
         >

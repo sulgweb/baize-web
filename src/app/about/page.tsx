@@ -1,6 +1,27 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import SectionTitle from "@/components/Common/SectionTitle";
+import type { Metadata } from "next";
+import { gitHubUrl } from "@/utils/textHelper";
+
+export const metadata: Metadata = {
+  title: "关于我们",
+  description:
+    "关于白泽开源团队：使命、愿景与社区参与方式，致力于通过开源推动技术进步。",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    url: "/about",
+    title: "关于白泽开源团队",
+    description:
+      "关于白泽开源团队：使命、愿景与社区参与方式，致力于通过开源推动技术进步。",
+    images: [
+      {
+        url: "/images/logo/icon.png",
+        width: 600,
+        height: 600,
+        alt: "白泽开源团队",
+      },
+    ],
+  },
+};
 
 const AboutPage = () => {
   return (
@@ -113,7 +134,7 @@ const AboutPage = () => {
 
               <div className="mt-6">
                 <a
-                  href="https://github.com/baizeteam"
+                  href={gitHubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary/90 inline-flex items-center rounded-lg px-6 py-3 text-white transition-colors"

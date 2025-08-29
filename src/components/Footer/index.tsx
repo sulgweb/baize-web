@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { gitHubUrl } from "@/utils/textHelper";
 
 const Footer = () => {
   return (
@@ -67,7 +68,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      href="https://github.com/baizeteam"
+                      href={gitHubUrl}
                       target="_blank"
                       className="text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary mb-4 inline-block text-base duration-300"
                     >

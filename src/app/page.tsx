@@ -1,12 +1,49 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "主页",
+  description: `白泽开源团队提供图片压缩、CDN插件、白泽工具箱等多种实用工具，帮助开发者提升工作效率，专注于核心业务开发。`,
+  alternates: { canonical: "/" },
+  openGraph: {
+    url: "/",
+    title: "白泽开源团队 - 主页",
+    description:
+      "提供图片压缩、Vite CDN、Webpack CDN、学习项目等实用工具与资源。",
+    images: [
+      {
+        url: "/images/logo/icon.png",
+        width: 600,
+        height: 600,
+        alt: "白泽开源团队",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
     <>
+      <Script
+        id="ld-json"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "白泽开源团队",
+            url: "https://baize-web.plume.vip/",
+            logo: "https://baize-web.plume.vip/images/logo/icon.png",
+            description:
+              "提供图片压缩、Vite CDN、Webpack CDN、学习项目等实用工具与资源。",
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="container mx-auto px-4 py-20 lg:py-32">
+        <div className="container mx-auto px-4 py-24 lg:py-32">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div className="space-y-8">
               <div className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800 dark:bg-blue-900/30 dark:text-blue-200">
@@ -24,8 +61,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl leading-relaxed text-gray-600 dark:text-gray-300">
-                白泽开源团队提供图片压缩、CDN插件、白泽工具箱等多种实用工具，
-                帮助开发者提升工作效率，专注于核心业务开发。
+                {metadata.description}
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Link
