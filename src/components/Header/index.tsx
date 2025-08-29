@@ -49,7 +49,7 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className=" max-w-full px-4 xl:mr-12">
+            <div className="max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -152,7 +152,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                
                 <div>
                   <ThemeToggler />
                 </div>

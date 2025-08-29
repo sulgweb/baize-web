@@ -113,7 +113,7 @@ const AboutPage = () => {
 
               <div className="mt-6">
                 <a
-                  href="https://github.com/baize-team"
+                  href="https://github.com/baizeteam"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary hover:bg-primary/90 inline-flex items-center rounded-lg px-6 py-3 text-white transition-colors"
