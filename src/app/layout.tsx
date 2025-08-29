@@ -11,7 +11,7 @@ import { baseUrl, gitHubUrl } from "@/utils/textHelper";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "白泽开源团队 | 让开发更高效，让工作更轻松",
+    default: "白泽工具箱 | 白泽开源团队",
     template: "%s | 白泽开源团队",
   },
   description:
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     url: "/",
     siteName: "白泽开源团队",
-    title: "白泽开源团队 | 让开发更高效，让工作更轻松",
+    title: "白泽工具箱 | 白泽开源团队",
     description:
       "白泽开源团队提供图片压缩、CDN 插件、白泽工具箱等实用工具，助力开发者效率提升。",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "白泽开源团队 | 让开发更高效，让工作更轻松",
+    title: "白泽工具箱 | 白泽开源团队",
     description:
       "白泽开源团队提供图片压缩、CDN 插件、白泽工具箱等实用工具，助力开发者效率提升。",
     images: ["/images/logo/icon.png"],
