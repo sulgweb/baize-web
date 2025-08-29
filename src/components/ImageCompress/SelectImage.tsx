@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { InboxOutlined, DownloadOutlined } from "@ant-design/icons";
 import { Upload, Button } from "antd";
-import { compressImagesWorker, CompressBackInfo } from "baize-compress-image";
+import { ImageCompressor, CompressBackInfo } from "baize-compress-image";
 
 const { Dragger } = Upload;
 
@@ -20,6 +20,11 @@ interface ImageItem {
 
 export default function SelectImage() {
   const [imageList, setImageList] = useState<ImageItem[]>([]);
+  const workerRef = useRef<ImageCompressor>(null);
+
+  useEffect(() => {
+    workerRef.current = new ImageCompressor({ workerNum: 8 });
+  }, []);
 
   const formatFileSize = (bytes: number): string => {
     if (bytes === 0) return "0 Bytes";
@@ -56,9 +61,12 @@ export default function SelectImage() {
         ),
       );
 
-      const results = await compressImagesWorker([imageItem.originalFile], {
-        quality: 0.7,
-      });
+      const results = await workerRef.current.compressImagesWorker(
+        [imageItem.originalFile],
+        {
+          quality: 0.7,
+        },
+      );
 
       const result = results[0];
       if (result.status === "fulfilled") {

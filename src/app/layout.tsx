@@ -56,11 +56,6 @@ export const metadata: Metadata = {
       "白泽开源团队提供图片压缩、CDN 插件、白泽工具箱等实用工具，助力开发者效率提升。",
     images: ["/images/logo/icon.png"],
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.png",
-  },
-  manifest: "/site.webmanifest",
   robots: {
     index: true,
     follow: true,
