@@ -16,6 +16,7 @@ const Footer = () => {
                     src="/images/logo/icon.png"
                     alt="logo"
                     className="w-full rounded-lg"
+                    priority
                     width={48}
                     height={48}
                   />

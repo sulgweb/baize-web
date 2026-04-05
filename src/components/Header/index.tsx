@@ -61,6 +61,7 @@ const Header = () => {
                   alt="logo"
                   width={64}
                   height={64}
+                  priority
                   className="rounded-lg"
                 />
               </Link>

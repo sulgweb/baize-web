@@ -14,12 +14,14 @@ const AboutSectionTwo = () => {
                 src="/images/about/about-image-2.svg"
                 alt="about image"
                 fill
+                priority
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
                 src="/images/about/about-image-2-dark.svg"
                 alt="about image"
                 fill
+                priority
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
               />
             </div>
