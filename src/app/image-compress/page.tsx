@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "图片压缩",
   description:
     "白泽团队开源的专业图片压缩工具，支持 JPG、JPEG、WebP、PNG 格式，采用队列 + 并发处理技术，提供高效的批量压缩服务。拖拽上传即可开始压缩，实时显示压缩进度和效果对比。",
+  alternates: { canonical: "/image-compress" },
   openGraph: {
     title: "图片压缩 - 白泽开源团队",
     description:
