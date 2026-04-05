@@ -56,6 +56,7 @@ const AboutSectionOne = () => {
                   alt="about-image"
                   fill
                   priority
+                  fetchPriority="high"
                   className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                 />
                 <Image
@@ -63,6 +64,7 @@ const AboutSectionOne = () => {
                   alt="about-image"
                   fill
                   priority
+                  fetchPriority="high"
                   className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
                 />
               </div>

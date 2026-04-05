@@ -62,6 +62,7 @@ const Header = () => {
                   width={64}
                   height={64}
                   priority
+                  fetchPriority="high"
                   className="rounded-lg"
                 />
               </Link>

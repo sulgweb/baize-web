@@ -24,6 +24,7 @@ const Introduce = (props: IIntroducProps) => {
                 alt="about image"
                 fill
                 priority
+                fetchPriority="high"
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
@@ -31,6 +32,7 @@ const Introduce = (props: IIntroducProps) => {
                 alt="about image"
                 fill
                 priority
+                fetchPriority="high"
                 className="drop-shadow-three hidden dark:block dark:drop-shadow-none"
               />
             </div>

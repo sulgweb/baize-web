@@ -94,6 +94,7 @@ export default function Home() {
                   height={300}
                   className="rounded-2xl shadow-2xl"
                   priority
+                  fetchPriority="high"
                 />
               </div>
               <div className="absolute -top-4 -right-4 h-72 w-72 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 blur-3xl"></div>

@@ -17,6 +17,7 @@ const Footer = () => {
                     alt="logo"
                     className="w-full rounded-lg"
                     priority
+                    fetchPriority="high"
                     width={48}
                     height={48}
                   />

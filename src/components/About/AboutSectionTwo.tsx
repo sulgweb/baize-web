@@ -15,6 +15,7 @@ const AboutSectionTwo = () => {
                 alt="about image"
                 fill
                 priority
+                fetchPriority="high"
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
@@ -22,6 +23,7 @@ const AboutSectionTwo = () => {
                 alt="about image"
                 fill
                 priority
+                fetchPriority="high"
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
               />
             </div>

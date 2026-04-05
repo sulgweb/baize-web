@@ -29,6 +29,7 @@ export default function Video() {
                     alt="video image"
                     className="object-cover"
                     priority
+                    fetchPriority="high"
                     fill
                   />
                   <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
