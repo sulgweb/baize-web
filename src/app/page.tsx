@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { baseUrl } from "@/utils/textHelper";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "白泽开源团队 - 主页",
@@ -270,6 +271,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SpeedInsights />
     </>
   );
 }
