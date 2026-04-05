@@ -26,19 +26,19 @@ const menuData: Menu[] = [
     newTab: false,
     submenu: [
       {
-        id: "",
+        id: "vite-cdn",
         title: "CDN插件(vite)",
         path: "/vite-cdn",
         newTab: false,
       },
       {
-        id: "",
+        id: "webpack-cdn",
         title: "CDN插件(webpack)",
         path: "/webpack-cdn",
         newTab: false,
       },
       {
-        id: "",
+        id: "quick-study",
         title: "VUE & REACT & 微前端",
         path: "/quick-study",
         newTab: false,

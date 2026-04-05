@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { baseUrl } from "@/utils/textHelper";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -38,6 +39,23 @@ export default function Home() {
             logo: "https://baize-web.plume.vip/images/logo/icon.png",
             description:
               "提供图片压缩、Vite CDN、Webpack CDN、学习项目等实用工具与资源。",
+            hasPart: [
+              {
+                "@type": "WebPage",
+                name: "图片压缩",
+                url: `${baseUrl}/image-compress`,
+              },
+              {
+                "@type": "WebPage",
+                name: "白泽工具箱",
+                url: `${baseUrl}/baize-toolbox`,
+              },
+              {
+                "@type": "WebPage",
+                name: "关于我们",
+                url: `${baseUrl}/about`,
+              },
+            ],
           }),
         }}
       />
