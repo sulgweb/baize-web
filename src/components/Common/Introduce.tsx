@@ -37,8 +37,8 @@ const Introduce = (props: IIntroducProps) => {
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
-              {introduceList?.map((item) => (
-                <div className="mb-9">
+              {introduceList?.map((item, index) => (
+                <div className="mb-9" key={index}>
                   <h3 className="mb-4 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
                     {item.title}
                   </h3>
