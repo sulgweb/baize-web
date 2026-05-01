@@ -125,8 +125,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* 协同文档 */}
-            <div className="group transform rounded-2xl bg-gradient-to-br from-orange-50 to-amber-100 p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:from-gray-800 dark:to-gray-700">
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-orange-500 to-amber-600 transition-transform duration-300 group-hover:scale-110">
+            <div className="group transform rounded-2xl bg-gradient-to-r from-orange-50 to-orange-100 p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:from-gray-800 dark:to-gray-700">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-600 transition-transform duration-300 group-hover:scale-110">
                 <svg
                   className="h-8 w-8 text-white"
                   fill="none"
@@ -194,6 +194,50 @@ export default function Home() {
               <Link
                 href="image-compress"
                 className="inline-flex items-center font-semibold text-blue-600 transition-colors duration-300 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                {tCommon("useNow")}
+                <svg
+                  className="ml-2 h-4 w-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+
+            {/* 白泽工具箱 */}
+            <div className="group transform rounded-2xl bg-gradient-to-br from-rose-50 to-rose-100 p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:from-gray-800 dark:to-gray-700">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r from-rose-500 to-pink-600 transition-transform duration-300 group-hover:scale-110">
+                <svg
+                  className="h-8 w-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
+                {t("toolboxTitle")}
+              </h3>
+              <p className="mb-6 text-gray-600 dark:text-gray-300">
+                {t("toolboxDesc")}
+              </p>
+              <Link
+                href="baize-toolbox"
+                className="inline-flex items-center font-semibold text-rose-600 transition-colors duration-300 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300"
               >
                 {tCommon("useNow")}
                 <svg

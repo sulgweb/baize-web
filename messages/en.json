@@ -38,7 +38,9 @@
     "microFrontendTitle": "VUE & REACT & Micro Frontend",
     "microFrontendDesc": "Quick comparison learning projects for Vue, React, and Micro Frontend to help you get started easily",
     "editorTitle": "Collaborative Document",
-    "editorDesc": "A collaborative editor based on Yjs + SlateJS, supporting multi-user editing with instant sync, ideal for team collaboration"
+    "editorDesc": "A collaborative editor based on Yjs + SlateJS, supporting multi-user editing with instant sync, ideal for team collaboration",
+    "toolboxTitle": "Baize Toolbox",
+    "toolboxDesc": "A powerful multimedia tool supporting audio/video transcoding, extracting audio/video/subtitles, text-to-speech, screen recording, screenshots, and compression"
   },
   "about": {
     "title": "About Baize Open Source Team",
