@@ -24,8 +24,8 @@ importers:
         specifier: ^6.4.2
         version: 6.4.2(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       baize-compress-image:
-        specifier: ^2.0.2
-        version: 2.0.2
+        specifier: ^2.0.3
+        version: 2.0.3
       jszip:
         specifier: ^3.10.1
         version: 3.10.1
@@ -1054,8 +1054,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  baize-compress-image@2.0.2:
-    resolution: {integrity: sha512-RhXECh2HsVxcZMrlHOteHzbwNRDL5FK/1W5g+7LRAEosETeYPAgEw1VgMzPT4LieDEp7jalSfShwGZ8ceXukuA==}
+  baize-compress-image@2.0.3:
+    resolution: {integrity: sha512-7rVSIWvIjpwWhw8uSeduKtpLMVtsahUAwWJnU54lRl2aPw08lj4Kay9QFTdRBBB4bBmwDaqBz8kalCtRaRP7mQ==}
 
   baseline-browser-mapping@2.10.15:
     resolution: {integrity: sha512-1nfKCq9wuAZFTkA2ey/3OXXx7GzFjLdkTiFVNwlJ9WqdI706CZRIhEqjuwanjMIja+84jDLa9rcyZDPDiVkASQ==}
@@ -2502,7 +2502,7 @@ snapshots:
       postcss: 8.5.6
       postcss-value-parser: 4.2.0
 
-  baize-compress-image@2.0.2: {}
+  baize-compress-image@2.0.3: {}
 
   baseline-browser-mapping@2.10.15: {}
 
